@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sweta Jha — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #ffffff;
+      color: #000000;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 14.5px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 56px 60px;
+    }
+
+    /* ── NAME / HEADER ── */
+    header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+      color: #000;
+      margin-bottom: 6px;
+    }
+
+    .contact-line {
+      font-size: 13.5px;
+      color: #000;
+      line-height: 1.8;
+    }
+
+    .contact-line a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .sep {
+      margin: 0 5px;
+      color: #555;
+    }
+
+    /* ── SECTION ── */
+    section {
+      margin-top: 14px;
+    }
+
+    .section-title {
+      font-size: 15px;
+      font-weight: 400;
+      font-variant: small-caps;
+      letter-spacing: 0.06em;
+      color: #000;
+      border-bottom: 1.2px solid #000;
+      padding-bottom: 2px;
+      margin-bottom: 8px;
+      text-transform: lowercase; /* triggers small-caps properly */
+    }
+
+    /* ── EDUCATION ── */
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .edu-left .uni {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .edu-left .degree {
+      font-size: 14px;
+      font-style: italic;
+      color: #000;
+      margin-top: 1px;
+    }
+
+    .edu-right {
+      font-size: 14px;
+      text-align: right;
+      color: #000;
+      white-space: nowrap;
+    }
+
+    /* ── SKILLS ── */
+    .skills-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .skills-list li {
+      font-size: 14px;
+      color: #000;
+      line-height: 1.5;
+    }
+
+    .skills-list li strong {
+      font-weight: 700;
+    }
+
+    /* ── PROJECTS ── */
+    .project {
+      margin-bottom: 10px;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 3px;
+    }
+
+    .project-title-line {
+      font-size: 14.5px;
+      color: #000;
+      line-height: 1.4;
+    }
+
+    .project-title-line strong {
+      font-weight: 700;
+    }
+
+    .project-title-line em {
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .project-title-line a {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    .project-date {
+      font-size: 14px;
+      color: #000;
+      white-space: nowrap;
+    }
+
+    .project-bullets {
+      list-style: disc;
+      padding-left: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .project-bullets li {
+      font-size: 14px;
+      color: #000;
+      line-height: 1.5;
+    }
+
+    .project-bullets li strong {
+      font-weight: 700;
+    }
+
+    /* ── CERTIFICATIONS ── */
+    .cert-block {
+      font-size: 14px;
+      color: #000;
+      line-height: 1.55;
+    }
+
+    .cert-block strong {
+      font-weight: 700;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      margin-top: 28px;
+      text-align: center;
+    }
+
+    .print-btn {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 12px;
+      font-variant: small-caps;
+      background: #fff;
+      color: #555;
+      border: 1px solid #ccc;
+      padding: 5px 16px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .print-btn:hover { color: #000; border-color: #000; }
+
+    /* ── PRINT ── */
+    @media print {
+      .print-btn { display: none; }
+      .page { padding: 20px 32px; }
+      body { font-size: 13px; }
+    }
+
+    @media (max-width: 600px) {
+      .page { padding: 32px 22px 48px; }
+      .edu-row { flex-direction: column; }
+      .edu-right { text-align: left; }
+      .project-header { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header>
+    <h1>Sweta Jha</h1>
+    <div class="contact-line">
+      +91 97119 29709
+      <span class="sep">|</span>
+      <a href="mailto:swetajhaofficial11@gmail.com">swetajhaofficial11@gmail.com</a>
+      <span class="sep">|</span>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <span class="sep">|</span>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <span class="sep">|</span>
+      <a href="https://leetcode.com" target="_blank">LeetCode</a>
+    </div>
+  </header>
+
+  <!-- EDUCATION -->
+  <section>
+    <div class="section-title">Education</div>
+    <div class="edu-row">
+      <div class="edu-left">
+        <div class="uni">Galgotias University, Greater Noida, India</div>
+        <div class="degree">Bachelor of Technology in Computer Science and Engineering</div>
+      </div>
+      <div class="edu-right">
+        Aug 2024 – Present
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section>
+    <div class="section-title">Technical Skills</div>
+    <ul class="skills-list">
+      <li><strong>Languages &amp; Frontend</strong>: Java, JavaScript, HTML, CSS</li>
+      <li><strong>Backend &amp; Database</strong>: Node.js, MySQL, SQL</li>
+      <li><strong>Tools &amp; Platforms</strong>: Git, GitHub, VS Code</li>
+      <li><strong>CS Fundamentals</strong>: Data Structures &amp; Algorithms, OOP, DBMS, Operating Systems</li>
+      <li><strong>Competitive Programming</strong>: Active on LeetCode</li>
+      <li><strong>Soft Skills</strong>: Problem Solving, Team Collaboration, Communication, Adaptability, Critical Thinking</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <div class="section-title">Projects</div>
+
+    <div class="project">
+      <div class="project-header">
+        <div class="project-title-line">
+          <strong>SafeCircle – Women Safety &amp; Technology</strong>
+          <span class="sep">|</span>
+          <em>HTML, CSS, JavaScript, MySQL, Node.js</em>
+        </div>
+        <div class="project-date">2024</div>
+      </div>
+      <ul class="project-bullets">
+        <li>Developed a web-based women safety application to provide quick <strong>emergency assistance</strong> for users in distress.</li>
+        <li>Implemented <strong>user registration</strong> and secure data storage using <strong>MySQL</strong>; integrated backend logic using <strong>Node.js</strong> for handling user requests.</li>
+        <li>Designed <strong>responsive UI</strong> using HTML and CSS with a focus on real-world safety use cases and practical problem solving.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <div class="project-title-line">
+          <strong>Autonomous Line Follower Robot – IIT Techfest Zonals (Meshmerise)</strong>
+          <span class="sep">|</span>
+          <em>Arduino Nano, Embedded C, IR Sensors, L298N</em>
+        </div>
+        <div class="project-date">2024</div>
+      </div>
+      <ul class="project-bullets">
+        <li>Designed and built an <strong>autonomous line follower robot</strong> for IIT Techfest Zonals – Meshmerise event held at <strong>IIIT Delhi</strong>.</li>
+        <li>Implemented real-time line detection using an <strong>8-channel IR sensor array</strong>; developed control logic in <strong>Embedded C</strong> on Arduino Nano to dynamically adjust motor speed and direction.</li>
+        <li>Integrated DC motors with <strong>L298N motor driver</strong>; calibrated IR sensors and optimized threshold values to handle sharp turns and track variations.</li>
+        <li>Gained hands-on experience in <strong>embedded systems</strong>, robotics, and hardware-level debugging in a competitive, time-constrained environment.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS & ACHIEVEMENTS -->
+  <section>
+    <div class="section-title">Certifications &amp; Achievements</div>
+    <div class="cert-block">
+      <strong>Certifications</strong>: Database Programming with SQL – Oracle Academy
+      <span class="sep">|</span>
+      Java &amp; DSA – HCL GUVI
+      <span class="sep">|</span>
+      TechFest Delhi Edition GenAI – HCL GUVI.<br/>
+      <strong>Hackathons</strong>: WIE-Hackearth 2025 – IEEE Galgotias University; participated in competitive hardware build at IIT Techfest Zonals (Meshmerise) at IIIT Delhi.<br/>
+      <strong>Competitive Programming</strong>: Active problem solver on LeetCode; focused on Data Structures &amp; Algorithms.
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <button class="print-btn" onclick="window.print()">Save as PDF</button>
+  </footer>
+
+</div>
+</body>
+</html>
